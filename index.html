@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)file:///D:/Downloads/index.html#downloads -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MzUtils</title>
+    <style>
+        /* Base Styles & Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d0b14; /* Dark background */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            /* Creating the dark purple radial gradient background */
+            background: radial-gradient(circle at 50% 30%, #2a1a4a 0%, #0d0b14 60%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Hero Section (Image 1) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .version-badge {
+            background-color: rgba(139, 92, 246, 0.1);
+            border: 1px solid #8b5cf6;
+            color: #a87ffb;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0 0 40px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .highlight {
+            color: #a87ffb; /* Purple text colour */
+            position: relative;
+        }
+
+        /* Small scribble under MzUtils */
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #5b21b6;
+            border-radius: 2px;
+            transform: rotate(-2deg);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #6d28d9, #8b5cf6);
+            color: white;
+            padding: 14px 60px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            border: 1px solid #a87ffb;
+            transition: opacity 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        /* Downloads Section (Image 2) */
+        .downloads-section {
+            min-height: 100vh;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin: 0 0 8px 0;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 24px;
+            max-width: 900px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 32px;
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #a1a1aa;
+            margin: 0 0 40px 0;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 20px 80px 20px;
+        }
+
+        .faq-header {
+            margin-bottom: 32px;
+        }
+
+        .faq-header h2 {
+            font-size: 2.5rem;
+            margin: 0 0 8px 0;
+        }
+
+        .faq-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .faq-item:hover {
+            color: #a87ffb;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="version-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            Version 2
+        </div>
+        <h1>Download the <span class="highlight">MzUtils</span> Roblox utility</h1>
+        <a href="file:///D:/Downloads/index.html#downloads" class="btn-primary">Download now</a>
+    </section>
+
+    <section id="downloads" class="downloads-section">
+        <div class="section-header">
+            <h2>MzUtils</h2>
+            <p class="subtitle">Downloads for Michael's Zombies utils</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>MzBinds</h3>
+                <p>It's a bind customiser for Michael's Zombies</p>
+                <a href="https://github.com/maphashyt/maphashyt.github.io/raw/refs/heads/main/MzBindsV2.exe" class="btn-secondary">Download</a>
+            </div>
+
+            <div class="card">
+                <h3>MzMacros</h3>
+                <p>Some Macros for Michael's Zombies</p>
+                <a href="https://github.com/maphashyt/maphashyt.github.io/raw/refs/heads/main/MzMacros.exe" class="btn-secondary">Download</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+</body></html>
